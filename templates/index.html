@@ -28,19 +28,16 @@
 
 
    <div class="result text-center">
-
-
        {% if news %}
-           <h2>Новости:</h2>
+           <h2>News:</h2>
            <ul>
                {% for article in news %}
                    <li><a href="{{ article['url'] }}"> {{ article['title'] }} </a></li>
                {% endfor %}
            </ul>
        {% endif %}
-
-
    </div>
+
 </div>
 
 
